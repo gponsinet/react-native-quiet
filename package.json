@@ -1,0 +1,43 @@
+{
+  "name": "react-native-quiet",
+  "title": "React Native Quiet",
+  "version": "0.1.0",
+  "description": "🤫 Quiet for React Native.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd android && rm -rf org.quietmodem.Quiet && rm -rf Transducer && git clone https://github.com/quiet/org.quietmodem.Quiet && mv org.quietmodem.Quiet Transducer && cd ..",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cawfree/react-native-quiet.git",
+    "baseUrl": "https://github.com/cawfree/react-native-quiet"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "quiet",
+    "quietjs",
+    "ultrasonic",
+    "data",
+    "audio",
+    "send",
+    "transmit",
+    "chirp"
+  ],
+  "author": {
+    "name": "Alex Thomas (@cawfree)",
+    "email": "hello@cawfree.com"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "^16.8.1",
+    "react-native": ">=0.59.0-rc.0 <1.0.x"
+  },
+  "devDependencies": {
+    "react": "^16.8.3",
+    "react-native": "^0.59.10"
+  }
+}
