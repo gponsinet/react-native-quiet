@@ -1,5 +1,3 @@
-import './web/RNQuiet'
-
 import {
 	NativeEventEmitter,
 	NativeModules,

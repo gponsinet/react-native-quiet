@@ -3,7 +3,6 @@
   "title": "React Native Quiet",
   "version": "0.1.0",
   "description": "🤫 Quiet for React Native.",
-  "main": "index.js",
   "scripts": {
     "postinstall": "cd android && rm -rf org.quietmodem.Quiet && rm -rf Transducer && git clone https://github.com/quiet/org.quietmodem.Quiet && mv org.quietmodem.Quiet Transducer && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -32,6 +31,9 @@
   "license": "MIT",
   "licenseFilename": "LICENSE",
   "readmeFilename": "README.md",
+  "dependencies": {
+    "quietjs-bundle": "*"
+  },
   "peerDependencies": {
     "react": "^16.8.1",
     "react-native": ">=0.59.0-rc.0 <1.0.x"
